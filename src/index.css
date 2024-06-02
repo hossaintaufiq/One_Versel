@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;700&display=swap");
+
+body {
+  @apply font-alexandria;
+}
+
+.sqew {
+  transform: skewX(20deg);
+}
+
+.skew-background {
+  z-index: -1;
+}
+
+.custombtn {
+  width: 56px;
+  height: 38px;
+  border-radius: 100px;
+  padding: 0px;
+  border-color: #161734;
+  border: 1.5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bdr {
+  border-color: #161734;
+  border: 1.5px solid;
+}
+
+.cardHeader {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33.6px;
+  color: #161734;
+}
+
+.cardDesc {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #161734;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1023px) {
+  .max-w-[1512px] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .max-w-[1312px] {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
